@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>Single Price Grid Component @muhaideennausar</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Karla', sans-serif;
+      box-sizing: border-box;
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      background-color: #e5eff5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      width: 550px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px #98a6bd25;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .top{
+      width: 100%;
+      height: 200px;
+      background-color: #fff;
+      padding: 40px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .bottom{
+      display: flex;
+      flex-direction: row;
+    }
+    .left{
+      height: 225px;
+      width: 275px;
+      background-color: #2bb3b1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .right{
+      height: 225px;
+      width: 275px;
+      background-color: #4abebd;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hero-text{
+      font-size: 22px;
+      color: #3eafaf;
+      margin-bottom: 25px;
+    }
+    .top h4{
+      font-size: 15px;
+      color: #bfdf32;
+      margin-bottom: 15px;
+    }
+    .top p{
+      font-size: 14px;
+      line-height: 1.5;
+      color: #98a6bd;
+    }
+    .subscription{
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+    .price{
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      position: relative;
+    }
+    .per{
+      font-size: 15px;
+      font-weight: 400;
+      color: #ffffff50;
+      text-wrap: nowrap;
+      position: absolute;
+      top: 20%;
+      margin-left: 10px;
+    }
+    .detail{
+      font-size: 13px;
+      color: #ffffff;
+      font-weight: 400;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+    .signup{
+      height: auto;
+      width: 100%;
+      padding: 13px;
+      color: white;
+      background-color:#bfdf32;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0 5px 10px #13504f41;
+    }
+    .right h4{
+      font-size: 15px;
+      color: white;
+      font-weight: 400;
+    }
+    .right p{
+      font-size: 12px;
+      color: #ffffff80;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="top">
+      <h2 class="hero-text">Join our community</h2>
+      <h4>30-day, hassle-free money back guarantee</h4>
+      <p>Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+    </section>
+    <section class="bottom">
+      <div class="left">
+        <h4 class="subscription">Monthly Subscription</h4>
+        <span class="price">&dollar;29 <span class="per">per month</span></span>
+        <p class="detail">Full access for less than &dollar;1 a day</p>
+        <button class="signup">Sign Up</button>
+      </div>
+      <div class="right">
+        <h4>Why Us</h4>
+        <p>
+          Tutorials by industry experts<br>
+          Peer &amp; expert code review<br>
+          Coding exercises<br>
+          Access to our GitHub repos<br>
+          Community forum<br>
+          Flashcard decks<br>
+          New videos every week</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
